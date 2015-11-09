@@ -1,5 +1,7 @@
 # Libranino
-Arduino libraries that I came up with while playing with Arduino stuff. I hope it can be useful to somebody else too.
+Arduino libraries that I came up with while playing with Arduino stuff.
+
+The libraries are all **header-only**, which means that you just have to include them on your sketches and you'll be ready to go! (*piece of cake, isn't it?*)
 
 ## Installation
 Just clone the Libranino on your Arduino libraries folder:
