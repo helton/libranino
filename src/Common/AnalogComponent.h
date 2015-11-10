@@ -5,15 +5,19 @@
 #include <inttypes.h>
 #include "Component.h"
 
-class AnalogComponent : public Component {
-public:
-    AnalogComponent(uint8_t pin) : Component(pin) { }
-    int getAnalogValue() {
-    	return analogRead(_pin);
-    }
-    void setAnalogValue(int value) {
-    	analogWrite(_pin, value);
-    }
-};
+namespace Arduino {
+
+	class AnalogComponent : public Component {
+	public:
+		AnalogComponent(uint8_t pin) : Component(pin) { }
+		int getAnalogValue() {
+			return analogRead(_pin);
+		}
+		void setAnalogValue(int value) {
+			analogWrite(_pin, value);
+		}
+	};
+
+}
 
 #endif //ANALOGCOMPONENT_H
