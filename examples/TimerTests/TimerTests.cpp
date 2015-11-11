@@ -1,23 +1,23 @@
 #include "../../src/Timer/Timer.h"
-#include "../../src/DataStructure/Queue.h"
 
 using namespace Arduino;
 
-Queue<String> queue;
+const int ledPin = 13;
+Timer timer(50);
+
+void turnLedOnAndOff() {
+	digitalWrite(ledPin, HIGH);
+	delay(250);
+	digitalWrite(ledPin, LOW);
+	delay(250);
+}
 
 void setup() {
 	Serial.begin(9600);
+	pinMode(ledPin, OUTPUT);
+	timer.addTask(Task(1000, turnLedOnAndOff, 3));
 }
 
 void loop() {
-	queue.enqueue("A");
-	queue.enqueue("B");
-	queue.enqueue("C");
-	Serial.println(queue.dequeue());
-	Serial.println("Size: " + String(queue.getSize()));
-	Serial.println(queue.dequeue());
-	Serial.println("Size: " + String(queue.getSize()));
-	Serial.println(queue.dequeue());
-	Serial.println("Size: " + String(queue.getSize()));
-	delay(3000);
+	timer.update();
 }

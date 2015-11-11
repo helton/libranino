@@ -1,5 +1,4 @@
-uno/project/TimerTests.cpp.o: ../TimerTests.cpp \
- ../../../src/Timer/Timer.h \
+uno/project/LinkedListTest.cpp.o: ../LinkedListTest.cpp \
  /home/helton/.arduinocdt/hardware/arduino/avr/1.6.9/cores/arduino/Arduino.h \
  /home/helton/.arduinocdt/hardware/arduino/avr/1.6.9/cores/arduino/binary.h \
  /home/helton/.arduinocdt/hardware/arduino/avr/1.6.9/cores/arduino/WCharacter.h \
@@ -11,5 +10,4 @@ uno/project/TimerTests.cpp.o: ../TimerTests.cpp \
  /home/helton/.arduinocdt/hardware/arduino/avr/1.6.9/cores/arduino/USBAPI.h \
  /home/helton/.arduinocdt/hardware/arduino/avr/1.6.9/cores/arduino/Arduino.h \
  /home/helton/.arduinocdt/hardware/arduino/avr/1.6.9/variants/standard/pins_arduino.h \
- ../../../src/Timer/../DataStructure/Queue.h \
- ../../../src/DataStructure/Queue.h
+ ../../../src/DataStructure/LinkedList.h
